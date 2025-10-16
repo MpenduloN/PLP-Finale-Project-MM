@@ -144,15 +144,15 @@ const GoalsTracker = () => {
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div>
                     <p className="text-muted-foreground">Current</p>
-                    <p className="font-bold text-lg">${goal.current.toFixed(2)}</p>
+                    <p className="font-bold text-lg">R{goal.current.toFixed(2)}</p>
                   </div>
                   <div>
                     <p className="text-muted-foreground">Target</p>
-                    <p className="font-bold text-lg">${goal.target.toFixed(2)}</p>
+                    <p className="font-bold text-lg">R{goal.target.toFixed(2)}</p>
                   </div>
                 </div>
                 <div className="pt-2 border-t border-border">
-                  <p className="text-sm text-muted-foreground">Remaining: <span className="font-medium text-foreground">${remaining.toFixed(2)}</span></p>
+                  <p className="text-sm text-muted-foreground">Remaining: <span className="font-medium text-foreground">R{remaining.toFixed(2)}</span></p>
                   <p className="text-sm text-muted-foreground">Deadline: <span className="font-medium text-foreground">{goal.deadline}</span></p>
                 </div>
               </CardContent>

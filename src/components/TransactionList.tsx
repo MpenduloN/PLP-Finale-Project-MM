@@ -161,7 +161,7 @@ const TransactionList = () => {
                     <p className={`font-bold ${
                       transaction.type === "income" ? "text-success" : "text-destructive"
                     }`}>
-                      {transaction.type === "income" ? "+" : ""}${Math.abs(transaction.amount).toFixed(2)}
+                      {transaction.type === "income" ? "+" : ""}R{Math.abs(transaction.amount).toFixed(2)}
                     </p>
                     <p className="text-sm text-muted-foreground">{transaction.date}</p>
                   </div>

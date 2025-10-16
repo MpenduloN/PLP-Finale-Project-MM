@@ -6,7 +6,7 @@ const Dashboard = () => {
   const stats = [
     {
       title: "Total Balance",
-      value: "$24,580.00",
+      value: "R24,580.00",
       change: "+12.5%",
       trend: "up",
       icon: Wallet,
@@ -14,7 +14,7 @@ const Dashboard = () => {
     },
     {
       title: "Monthly Income",
-      value: "$8,500.00",
+      value: "R8,500.00",
       change: "+8.2%",
       trend: "up",
       icon: TrendingUp,
@@ -22,7 +22,7 @@ const Dashboard = () => {
     },
     {
       title: "Monthly Expenses",
-      value: "$4,320.00",
+      value: "R4,320.00",
       change: "-3.1%",
       trend: "down",
       icon: TrendingDown,
