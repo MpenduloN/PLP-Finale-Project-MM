@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { TrendingUp, TrendingDown, DollarSign, CreditCard, Wallet, Target } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { TrendingUp, TrendingDown, DollarSign, CreditCard, Wallet, Target, ExternalLink } from "lucide-react";
 import FinancialChart from "./FinancialChart";
 
 const Dashboard = () => {
@@ -102,6 +103,38 @@ const Dashboard = () => {
           </CardContent>
         </Card>
       </div>
+
+      {/* Credit Score Section */}
+      <Card className="shadow-card">
+        <CardHeader>
+          <CardTitle>Check Your Credit Score</CardTitle>
+          <CardDescription>Monitor your credit health and get personalized tips to improve your score</CardDescription>
+        </CardHeader>
+        <CardContent>
+          <div className="flex flex-wrap gap-3">
+            <Button 
+              onClick={() => window.open('https://www.transunion.co.za/', '_blank')}
+              className="gap-2"
+            >
+              TransUnion <ExternalLink className="h-4 w-4" />
+            </Button>
+            <Button 
+              onClick={() => window.open('https://www.experian.co.za/', '_blank')}
+              variant="outline"
+              className="gap-2"
+            >
+              Experian <ExternalLink className="h-4 w-4" />
+            </Button>
+            <Button 
+              onClick={() => window.open('https://www.compuscan.co.za/', '_blank')}
+              variant="outline"
+              className="gap-2"
+            >
+              Compuscan <ExternalLink className="h-4 w-4" />
+            </Button>
+          </div>
+        </CardContent>
+      </Card>
     </div>
   );
 };
